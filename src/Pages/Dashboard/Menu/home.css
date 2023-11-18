@@ -1,3 +1,10 @@
+:root{
+  --border-color:#292929;
+}
+.header-home{
+  position: sticky;
+  top: 0;
+}
 .home-navigation__list {
   width: 100%;
   /* padding: 1rem 20px; */
@@ -6,6 +13,7 @@
   text-align: center;
   align-items: center;
   border-bottom: 2px solid #292929;
+  background: #000000ac;
 }
 .home-navigation__list li:first-child,
 .home-navigation__list li:nth-child(2) {
@@ -30,4 +38,63 @@
   font-size: 18px;
   font-weight: 700;
   color: #fff;
+}
+.post-home{
+  width: 100%;
+  border-bottom: 2px solid var(--border-color);
+}
+.container-home{
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+.add-post__wrapper{
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.post-home__form{
+  width: 100%;
+ padding: 10px;
+}
+.home-form__top{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.evreone-settings{
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border-color);
+}
+.home-form__input{
+  border: transparent;
+  outline: transparent;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.home-form__input::placeholder{
+  font-size: 20px;
+}
+.home-form__bottom{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  min-height: min-content;
+  max-height: max-content;
+}
+.home-form__images{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px ;
+}
+.home-form__images img{
+  width: 20px;
 }

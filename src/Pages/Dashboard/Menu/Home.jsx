@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom"
 import Settings_icon from "../../../Assets/images/Settings.svg"
 import './home.css'
+import { AddPostHome } from "./AddPostHome"
 export const Home =()=>{
     return(
-        // <>
+        <>
         <header className="header-home">
             <nav className="header-home__navigation home-navigation">
                     <ul className="home-navigation__list" role="list">
@@ -21,6 +22,12 @@ export const Home =()=>{
                     </ul>
             </nav>
         </header>
-        // </>
+        <section className="post-home">
+            <div className="container-home">
+            <AddPostHome/>     
+            </div>
+         
+        </section>
+        </>
     )
 }

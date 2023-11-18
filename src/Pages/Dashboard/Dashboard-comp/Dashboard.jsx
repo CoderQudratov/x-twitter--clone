@@ -1,5 +1,5 @@
 import { Home } from "../Menu"
-import { NavigationBar } from "../NavigationBar/NavigationBar"
+import SideBar from "../Side-bar/SideBar"
 import './dashboard.css'
 export const Dashboard =()=>{
     return(
@@ -7,8 +7,8 @@ export const Dashboard =()=>{
             <section className="twitter">
                 <div className="container-dashboard">
                     <div className="twitter-wrapper">
-                        <div className="twitter-wrapper__child navigation-bar">
-                            <NavigationBar/>
+                        <div className="twitter-wrapper__child side-bar">
+                            <SideBar/>
                         </div>
                         <div className="twitter-wrapper__child menu">
                             <Home/>
