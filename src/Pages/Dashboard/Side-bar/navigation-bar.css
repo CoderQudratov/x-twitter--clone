@@ -1,0 +1,114 @@
+:root{
+  --hover-bg: rgba(100, 97, 97, 0.463);
+  --add-bg:#2aa3ef;
+  --add-bg-hover:#2aa3efb0;
+  --text-color:#8899A6;
+
+}
+
+.side-bar__container{
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 2.5rem;
+  margin-right: 40px;
+  
+}
+.side-bar__top{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+ 
+}
+.side-bar__top a{
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.side-bar__wrapper{
+  display: flex;
+  align-items: center;
+  min-width: min-content;
+  max-width: max-content;
+  column-gap: 20px;
+  padding: 0.5rem 16px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+
+
+
+.side-bar__wrapper:hover{
+  background-color: var(--hover-bg);
+}
+.site-logo__parent{
+  border-radius: 50%;
+  padding: 18px 0;
+}
+/* .site-logo__parent:hover{
+  background: #000;
+} */
+.site-logo{
+  width: 50px;
+  margin-left: 10px;
+}
+.side-bar__post-con{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.side-bar__post{
+  display: inline-block;
+  width: 100%;
+  background-color: var(--add-bg);
+  text-decoration: none;
+  padding: 14px 0;
+  border-radius: 30px;  
+}
+.avatar-inner{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  align-items: center;
+  border-radius: 30px;
+
+}
+.avatar-inner:hover{
+  background: var(--hover-bg);
+}
+.avatar-inner__left{
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.avatar-inner__left img{
+  width: 40px;
+  height: 60px;
+}
+.avatar-inner__name{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.avatar-inner__nickname{
+  font-size: 16px;
+  color:var(--text-color) ;
+  font-weight: 500;
+  margin-top: -4px;
+}
+.avatar-inner__dot{
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  box-shadow: -10px 0px 0px #ffff,-20px 0px 0px #ffff;
+  border-radius: 50%;
+}
