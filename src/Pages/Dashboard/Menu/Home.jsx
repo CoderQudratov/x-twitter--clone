@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom"
 import Settings_icon from "../../../Assets/images/Settings.svg"
 import './home.css'
 import { AddPostHome } from "./AddPostHome"
+import Cards from "./Cards"
 export const Home =()=>{
     return(
         <>
@@ -27,6 +28,16 @@ export const Home =()=>{
             <AddPostHome/>     
             </div>
          
+        </section>
+        <section className="cards">
+           
+            <Cards/>  
+            <Cards/>    
+            <Cards/>  
+            <Cards/>  
+            
+           
+            
         </section>
         </>
     )
