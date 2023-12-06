@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import Avatar from "../../../Assets/images/Ellipse 281.svg";
 import Cristiano from "../../../Assets/images/Cristiano_Ronaldo_WC2022_-_01_(cropped).jpg";
 import CardFunctions from "./Card-functions";
+import { Context } from "../../../Settings/Contex/ContextProvider";
 function Cards() {
+  const {srcImg}=useContext(Context)
+
   return (
     <>
        <div className="cards">
@@ -33,7 +36,15 @@ function Cards() {
               </p>
             </div>
             <div className="cards__img-con">
-              <img src={Cristiano} alt=""  className="card__img" />
+              {
+              srcImg?.map(item=>{
+               
+               return(
+                <img src={item} alt="img" />
+               )
+              })
+              }
+              
             </div>
          <CardFunctions/>
           </div>

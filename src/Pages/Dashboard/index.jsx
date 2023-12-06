@@ -1,2 +1,1 @@
-
-export * from "./Dashboard-comp/Dashboard"
+export * from "./Dashboard-comp/Dashboard";

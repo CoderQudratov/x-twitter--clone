@@ -33,14 +33,30 @@
 }
 .menu {
   width: 100%;
+  border-right: 2px solid #292929;
   /* background-color: aqua; */
   height: auto
+ 
 }
 .explore {
   width: 100%;
-  background-color: blue;
   position: sticky;
   right: 0;
   top: 0;
   bottom: 0;
+  max-height: 240vh;
+ 
+  height: auto;
+ 
+}
+.explore-nothome{
+  width: 100%;
+  position: sticky;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+ 
+  height: 100vh;
+ 
 }

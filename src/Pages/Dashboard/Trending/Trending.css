@@ -1,0 +1,145 @@
+.trending-container {
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  position: relative;
+}
+.trending-input__inner {
+  width: 340px;
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  margin-bottom: 10px;
+}
+.trending-input__label {
+  display: flex;
+  background-color: rgba(100, 97, 97, 0.463);
+  padding: 10px 24px;
+  border-radius: 30px;
+  column-gap: 16px;
+}
+.trending-input__label input {
+  width: 100%;
+  background: transparent;
+  border: transparent;
+  outline: transparent;
+  color: #fff;
+}
+.subscribe {
+  margin-top: 18px;
+  color: #fff;
+  width: 100%;
+  background: #1a1a1a;
+  padding: 14px;
+  border-radius: 16px;
+  height: 145px;
+}
+.subscribe__title {
+  margin-top: -5px;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.subscribe__disc {
+  margin-bottom: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.subscribe__btn-click {
+  background-color: #1da1f2;
+  padding: 8px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+.trend-foryou {
+  color: #fff;
+  background: #1a1a1a;
+  margin: 20px 0;
+
+  border-radius: 16px;
+}
+.frend-foryou__item {
+  width: 100%;
+  display: flex;
+  /* padding: 14px; */
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.trend-foryou__headnig{
+  padding: 16px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.frend-foryou__item:hover {
+  background: #242424;
+}
+.frend__title,.frend__views{
+  color: #ffffff70;
+ font-size: 12px;
+}
+.frend__name{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.trend-foryou__link-con{
+  padding: 16px;
+ border-radius: 16px;
+ border-top-right-radius: 0;
+ border-top-left-radius: 0;
+
+}
+.trend-foryou__link-con:hover{
+  background: #242424;
+  
+}
+.trend-foryou__showmore{
+  color: #1da1f2;
+  text-decoration: none;
+}
+.follow{
+  width: 100%;
+  color: #fff;
+  background-color: #1a1a1a;
+  border-radius: 1rem;
+}
+.follow-header{
+  padding: 12px 16px;
+}
+.follow-more{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   
+  padding:0 16px;
+  padding-bottom: 10px;
+}
+.follow-more:hover{
+background-color: #242424;
+}
+.follow-more__inner{
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.follow-inner__name{
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.follow-inner__nickname{
+  font-size: 15px;
+  color: #ffffff70;
+  font-weight: 400;
+  margin-top: -4px;
+}
+.follow__btn{
+  padding: 4px 1rem;
+  border-radius: 22px;
+  font-weight: 600;
+}

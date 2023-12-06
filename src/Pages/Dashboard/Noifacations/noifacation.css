@@ -1,0 +1,50 @@
+.noifacations-header{
+
+ 
+    
+    color: #fff;
+    border-bottom: 1px solid #ffffff3d;
+}
+.noifacations-header__top{
+    padding: 12px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.noifacations-header__bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.noifacation-header__item{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+.noifacation-header__item:hover{
+    background: #2b2b2b;
+}
+.noifacaions-message{
+    width: 100%;
+    /* text-align: center; */
+    margin-top: 2rem;
+}
+.noifacaions-message__con h4{
+    font-size: 34px;
+    line-height: 2.5rem;
+    word-spacing: -1px;
+    font-weight: 700;
+}
+.noifacaions-message__con{
+   width: 360px;
+   margin: 0 auto;
+}
+.noifacaions-message__con p{
+    font-size: 17px;
+    color: #ffffff38;
+}
+.mentions__title{
+    font-size: 12px;
+    color: #fff;
+}

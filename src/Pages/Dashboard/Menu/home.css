@@ -193,3 +193,12 @@
   column-gap: 10px;
   align-items: center;
 }
+.post_instruments{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+

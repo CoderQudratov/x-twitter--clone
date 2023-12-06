@@ -35,8 +35,9 @@ ol[role='list'] {
   list-style: none;
 }
 
-a:not([class]) {
+a {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 img, picture, video, canvas, svg {

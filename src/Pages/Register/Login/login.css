@@ -1,0 +1,50 @@
+.login{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* align-items: center; */
+}
+.login__logo{
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login_form{
+
+    width: 100%;
+    padding-top: 40px;
+    display: block;
+    align-items: start;
+}
+.login_form h1{
+    font-size: 70px;
+}
+.login_form h2{
+    font-size: 36px;
+}
+.login__btns{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.login__btns button{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding:5px 18px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+}
+.login__btns p{
+    text-align: center;
+}
+.login__sign-up{
+    width: 100%;
+    background-color:aqua;
+    text-align: center;
+    padding:5px 18px;
+    border-radius: 30px;
+}
