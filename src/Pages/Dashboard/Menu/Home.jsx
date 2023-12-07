@@ -4,7 +4,9 @@ import "./home.css";
 import { AddPostHome } from "./AddPostHome";
 import Cards from "./Cards";
 import ImageUpload from "./ImageUpload";
+import { useState } from "react";
 export const Home = () => {
+  const [posts,setPosts]=useState([])
   return (
     <>
       <header className="header-home">
@@ -26,14 +28,12 @@ export const Home = () => {
       </header>
       <section className="post-home">
         <div className="container-home">
-          <AddPostHome />
+          <AddPostHome posts={posts} setPosts={setPosts} />
         </div>
       </section>
       <section className="cards">
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
+        <Cards setPosts={setPosts} posts={posts} />
+      
       </section>
     </>
   );

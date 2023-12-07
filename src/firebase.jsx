@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp, } from "firebase/app";
 import {getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
 import {getFirestore} from "firebase/firestore"
 import {getStorage} from "firebase/storage"
 
@@ -10,13 +11,13 @@ import {getStorage} from "firebase/storage"
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDClzQmYlnp5jKsOT9p8lHoj6r0aojMQbc",
-  authDomain: "twitter-clone-b0dbb.firebaseapp.com",
-  projectId: "twitter-clone-b0dbb",
-  storageBucket: "twitter-clone-b0dbb.appspot.com",
-  messagingSenderId: "135596609937",
-  appId: "1:135596609937:web:b9542c332dd3646546ca30",
-  measurementId: "G-JT9GCVRWYB"
+  apiKey: "AIzaSyAtMv3wuAvy5WzULHpiqEkYTtpmxEImpP0",
+  authDomain: "twitte-clone-eee7a.firebaseapp.com",
+  projectId: "twitte-clone-eee7a",
+  storageBucket: "twitte-clone-eee7a.appspot.com",
+  messagingSenderId: "783577853669",
+  appId: "1:783577853669:web:7067475593d1fe3ec6ae0c",
+  measurementId: "G-8LX2ENSDH7"
 };
 
 // Initialize Firebase
@@ -24,5 +25,6 @@ const app = initializeApp(firebaseConfig);
 export const auth =getAuth(app)
 export const db=getFirestore(app)
 export const storage =getStorage(app) 
+export const database =getDatabase(app)
 
 // "posts" nomli collectiondagi barcha dokumentlarni olish
