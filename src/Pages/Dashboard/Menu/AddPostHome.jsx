@@ -52,11 +52,11 @@ export const AddPostHome = ({ posts, setPosts }) => {
     await set(dbref(database, "posts/" + uuid), {
       uuid,
       user_token,
-      userName: "doston",
+      userName: user.displayName,
       postImages: imageGet.name?.length ? postImage : null,
       postDisc:post_title ,
 
-      userEmail: "coder@gmail.com",
+      userEmail: user.email,
       time: FullDate.toISOString(),
       user_avatar: "Avatar.png",
 
