@@ -109,8 +109,7 @@
   background: var(--btn-bg);
   padding: 8px 22px;
   border-radius: 30px;
-  border: transparent;
-  outline: transparent;
+  border: 2px solid var(--btn-bg);
   text-align: center;
   font-family: SF Compact Display;
   font-size: 18px;
@@ -118,22 +117,14 @@
   font-weight: 700;
   line-height: 19px;
   color: #fff;
+  transition: all 0.5s ease;
 }
-.home-form__btn-notactive {
+.home-form__btn:hover{
   background: var(--btn-bg);
-  opacity: 0.6;
-
-  padding: 8px 22px;
-  border-radius: 30px;
-  border: transparent;
-  outline: transparent;
-  text-align: center;
-  font-family: SF Compact Display;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 19px;
-  color: #fff;
+  opacity: 0.8;
+}
+.home-form__btn:active{
+ border: 2px solid #1a8cd3d3;
 }
 .cards{
   width: 100%;

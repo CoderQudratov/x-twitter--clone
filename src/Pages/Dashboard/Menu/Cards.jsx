@@ -1,18 +1,36 @@
-import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import React from "react";
+import { NavLink} from "react-router-dom";
 import Avatar from "../../../Assets/images/Ellipse 281.svg";
-import Cristiano from "../../../Assets/images/Cristiano_Ronaldo_WC2022_-_01_(cropped).jpg";
 import CardFunctions from "./Card-functions";
-import { Context } from "../../../Settings/Contex/ContextProvider";
-function Cards({posts,setPosts}) {
-  const {srcImg}=useContext(Context)
-// posts.forEach(element => {
-//   console.log(element);
-// });
+function Cards({posts}) {
+ const fullDate =new Date()
+  const getElapsedDuration = (startDateTime, endDateTime) => {
+    const diff = Math.abs(endDateTime - startDateTime);
+    const minutes = Math.floor(diff / 60000); // 1 minut = 60000 millisekund
+    const seconds = Math.floor(diff / 1000); 
+    const hours = Math.floor(minutes / 60);
+    const days = Math.floor(hours / 24);
+
+    if (seconds < 60) {
+      return `${seconds} sekund`;
+    } else if (minutes < 60) {
+      return `${minutes} minut`;
+    } else if (hours < 24) {
+      return `${hours} soat`;
+    } else if (hours >= 24 && hours < 48) {
+      return '1 kunga';
+    } else {
+      return `${days} kunga`;
+    }
+   
+  };
+ console.log(getElapsedDuration('2023-12-12T07:22:01.001',"2023-12-12T07:22:01.001"));
   return (
     <>
-    {posts.map(post=>(
- <div className="cards">
+    {posts?.map(post=>{
+ 
+      return(
+<div className="cards" key={post?.uuid} >
  <div className="container-home">
  <div className="cards__inner">
    <NavLink>
@@ -23,7 +41,9 @@ function Cards({posts,setPosts}) {
        <div className="card__nickname">
        <NavLink>{post?.userName}</NavLink>
        <NavLink>{post?.userEmail}</NavLink>
-       <NavLink>-{post?.postTime}</NavLink>  
+       <NavLink>-{
+           getElapsedDuration(new Date(post?.time), new Date(fullDate.toISOString()) )
+      }</NavLink>  
        </div>
        
        <span className="avatar-inner__dot"></span>
@@ -35,7 +55,10 @@ function Cards({posts,setPosts}) {
          </p>
        </div>
        <div className="cards__img-con">
-         <img src={post.postImages} alt="not found" />
+        {post?.postImages&&
+         <img src={post?.postImages}  alt="h1"/>
+        }
+        
          
        </div>
     <CardFunctions/>
@@ -45,7 +68,9 @@ function Cards({posts,setPosts}) {
  </div>
  
 </div>
-    ))}
+      )
+ 
+})}
       
 
     </>

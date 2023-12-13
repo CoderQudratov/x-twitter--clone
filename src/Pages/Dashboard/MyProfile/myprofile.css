@@ -1,0 +1,95 @@
+.myprofile {
+  padding: 8px 0px;
+}
+.padding-profile {
+  padding: 0px 20px;
+}
+.myprofile-header {
+  background-color: #000;
+  color: #fff;
+}
+
+.myprofile-header__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.myprofile-about__banner {
+  width: 100%;
+  height: 200px;
+}
+.myprofile-about__banner img {
+  width: 100%;
+}
+.myprofile-about__top {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+.myprofile-about__top img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  transform: translateY(-70px);
+}
+.myprofile-aboout__btn-con {
+  margin-top: 6px;
+}
+.myprofile-about_btn {
+  padding: 4px 16px;
+  border: transparent;
+  border-radius: 30px;
+  outline: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  word-spacing: 2px;
+  box-shadow: 0px 0px 1.5px #fff;
+}
+.myprofile-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  color: #fff;
+  list-style: none;
+}
+.myprofile-list__item:not(:nth-child(1)),
+.myprofile-list__item:not(:nth-child(1)) p {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.myprofile-list__name {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+}
+.myprofile-list__user-name {
+  color: #ffffff4d;
+  font-size: 18px;
+  font-weight: 300;
+}
+.following-btn {
+  color: #fff;
+}
+.followers-btn {
+  color: #fff;
+}
+.following-btn span,
+.followers-btn span {
+  color: #ffffff4d;
+}
+.myprofile-links__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.myprofile-links__item a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}

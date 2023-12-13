@@ -11,7 +11,10 @@ import Avatar_icon from "../../../Assets/images/Ellipse 281.svg";
 import More_icon from "../../../Assets/images/More.svg";
 import SideBarOptions from "./SideBarOptions";
 import Avatar from "./Avatar";
+import { useContext } from "react";
+import { Context } from "../../../Settings/Contex/ContextProvider";
 function SideBar(){
+  const {user}=useContext(Context)
   return (
     <div className="side-bar__container">
       <div className="side-bar__top">
@@ -22,7 +25,7 @@ function SideBar(){
       <SideBarOptions text="Messages" img={Messages_icon} to={"/messages"}/>
       <SideBarOptions text="Bookmarks" img={Bookmarks} to={"/bookmarks"}/>
       <SideBarOptions text="Lists" img={List_icon} to={"/lists"}/>
-      <SideBarOptions text="Profile" img={Avatar_icon} to={"/profile"}/>
+      <SideBarOptions text="Profile" img={Avatar_icon} to={`/${user.displayName}`}/>
       <SideBarOptions text="More" img={More_icon} to={"/more"}/>
       <span className="side-bar__post-con">
       <NavLink className={'side-bar__post'} to={'/add-post'}>Post</NavLink>   

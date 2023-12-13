@@ -1,18 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import img_icon from "../../../Assets/images/Default.svg";
 import gif_icon from "../../../Assets/images/Group.svg";
 import diagram_icon from "../../../Assets/images/diagram.svg";
 import smile_icon from "../../../Assets/images/smile.svg";
 import date_icon from "../../../Assets/images/date.svg";
-import avatar__icon from "../../../Assets/images/Ellipse 281.svg";
-import {ref, getDownloadURL, uploadBytesResumable } from "firebase/storage";
-import { storage } from "../../../firebase";
-function AddPostOPtions({selectedFile, setSelectedFile,previewImage, setPreviewImage}) {
+function AddPostOPtions({ setSelectedFile, setPreviewImage}) {
 
-  const [progres, setProgres] = useState(0);
   const handleFileChange = (e) => {
     const file = e.target.files[0];
+    
     if (file) {
       setSelectedFile(file);
 

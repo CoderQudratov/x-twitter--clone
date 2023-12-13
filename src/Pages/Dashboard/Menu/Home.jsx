@@ -3,7 +3,6 @@ import Settings_icon from "../../../Assets/images/Settings.svg";
 import "./home.css";
 import { AddPostHome } from "./AddPostHome";
 import Cards from "./Cards";
-import ImageUpload from "./ImageUpload";
 import { useState } from "react";
 export const Home = () => {
   const [posts,setPosts]=useState([])

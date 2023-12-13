@@ -3,11 +3,15 @@ import { Home } from "../Menu";
 import SideBar from "../Side-bar/SideBar";
 import Trending from "../Trending/Trending";
 import "./dashboard.css";
-import TrendForYou from "../Trending/TrendForYou";
 import ExploreMain from "../Explore/ExploreMain";
 import Noifacations from "../Noifacations/Noifacations";
+import MyProfile from "../MyProfile/MyProfile";
+import { useContext } from "react";
+import { Context } from "../../../Settings/Contex/ContextProvider";
 export const Dashboard = () => {
   const { pathname } = useLocation();
+  const {user}=useContext(Context)
+  console.log(user);
   return (
     <main id="main">
       <section className="twitter">
@@ -21,11 +25,12 @@ export const Dashboard = () => {
                 <Route path="explore*" element={<ExploreMain />} />
                 <Route path="home*" element={<Home />} />
                 <Route path="notifacations*" element={<Noifacations/>} />
+                <Route path={`${user.displayName}`} element={<MyProfile/>}/>
               </Routes>
             </div>
             <div
               className={`twitter-wrapper__child ${
-                pathname == "explore" ? "explore-nothome" : "explore"
+                pathname === "explore" ? "explore-nothome" : "explore"
               }`}
             >
               <Trending />
